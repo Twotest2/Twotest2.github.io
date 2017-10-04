@@ -1,0 +1,218 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('./glyphicons-halflings-regular.eot');
+    src: url('./glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    url('./glyphicons-halflings-regular.woff2') format('woff2'),
+    url('./glyphicons-halflings-regular.woff') format('woff'),
+    url('./glyphicons-halflings-regular.ttf') format('truetype'),
+    url('./glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'gasparregular';
+    src: url('../gaspar/Gaspar Regular-webfont.eot');
+    src: url('../gaspar/Gaspar Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../gaspar/Gaspar Regular-webfont.woff2') format('woff2'),
+    url('../gaspar/Gaspar Regular-webfont.woff') format('woff'),
+    url('../gaspar/Gaspar Regular-webfont.ttf') format('truetype'),
+    url('../gaspar/Gaspar Regular-webfont.svg#gasparregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'abelregular';
+    src: url('../abel/abel-regular-webfont.eot');
+    src: url('../abel/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../abel/abel-regular-webfont.woff2') format('woff2'),
+         url('../abel/abel-regular-webfont.woff') format('woff'),
+         url('../abel/abel-regular-webfont.ttf') format('truetype'),
+         url('../abel/abel-regular-webfont.svg#abelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../roboto/Roboto-Regular-webfont.eot');
+    src: url('../roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../roboto/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('../roboto/Roboto-Regular-webfont.woff') format('woff'),
+         url('../roboto/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../roboto/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'luxi_monoregular';
+    src: url('../luxi_mono/luximr-webfont.eot');
+    src: url('../luxi_mono/luximr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../luxi_mono/luximr-webfont.woff2') format('woff2'),
+         url('../luxi_mono/luximr-webfont.woff') format('woff'),
+         url('../luxi_mono/luximr-webfont.ttf') format('truetype'),
+         url('../luxi_mono/luximr-webfont.svg#luxi_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'devicon';
+	src:url('../devicon/devicon.eot?-hdf3wh');
+	src:url('../devicon/devicon.eot?#iefix-hdf3wh') format('embedded-opentype'),
+		url('../devicon/devicon.woff?-hdf3wh') format('woff'),
+		url('../devicon/devicon.ttf?-hdf3wh') format('truetype'),
+		url('../devicon/devicon.svg?-hdf3wh#devicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    font-family: 'gasparregular' ;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.gaspar {
+    font-family: 'gasparregular';
+    font-size: 15px;
+}
+
+.luxi_mono {
+    font-family: 'luxi_monoregular';
+    color: #2c902c;
+}
+
+.devicon{
+    font-family: 'devicon';
+    text-align: center;
+    font-size: 32px;
+}
+
+.devicon-color1{
+    color: #2c77be;
+}
+.devicon-color2{
+    color: #1e5385;
+}
+
+.devicon-color1:hover{
+    color: #458fd3;
+}
+
+.devicon-color2:hover{
+    color: #2668a6;
+}
+
+.devicon-c:before{
+    content: "\e639";
+}
+
+.devicon-cpp:before{
+    content: "\e635";
+}
+
+.devicon-csharp:before{
+    content: "\e637";
+}
+
+.devicon-java:before{
+    content: "\e842";
+}
+
+.devicon-java2{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: 3px;
+    /*background: #2365a3;*/
+}
+
+.inside-java{
+    width: 100%;
+    height: 100%;
+    background-image: url(../java.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.inside-java:hover{
+    background-image: url(../java-hover.png);
+}
+
+.devicon-github:before{
+    content: "\e909";
+    font-size: 31px;
+}
+
+.devicon-firefox:before{
+    content: "\e75e";
+}
+
+.devicon-git:before{
+    content: "\e7a8";
+}
+
+h4, h2, h1 {
+    font-family: 'abelregular';
+    letter-spacing: 1px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
